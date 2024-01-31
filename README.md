@@ -44,7 +44,7 @@ Golang API boilerplate using GoFiber and PostgreSQL
 
 8. Run `go mod tidy` to install all the dependencies.
 
-9. Copy .env.example to .env and change the values as per your configuration.
+9. Copy `.env.example` to `.env` and change the values as per your configuration.
 
 10. Run `go build -o ./build/main && ./build/main` to build and run the app.
 
