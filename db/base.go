@@ -21,12 +21,12 @@ func GetPostgresURL() string {
 
 	if C.Conf.PostgresSSLMode == "disable" {
 		return fmt.Sprintf("host=%s port=%s user=%s "+
-			"password=%s dbname=%s sslmode=disable", // pool_max_conns=%d, pool_min_conns=%d, pool_max_conn_idle_time=%s
-			dbHost, dbPort, dbUser, dbPass, dbName) // C.Conf.PostgresMaxOpenConns, C.Conf.PostgresMaxIdleConns, C.Conf.PostgresMaxIdleTime
+			"password=%s dbname=%s sslmode=disable",
+			dbHost, dbPort, dbUser, dbPass, dbName) 
 	} else {
 		return fmt.Sprintf("host=%s port=%s user=%s "+
-			"password=%s dbname=%s sslmode=%s sslrootcert=%s", // pool_max_conns=%d, pool_min_conns=%d, pool_max_conn_idle_time=%s
-			dbHost, dbPort, dbUser, dbPass, dbName, C.Conf.PostgresSSLMode, C.Conf.PostgresRootCertLoc) // , C.Conf.PostgresMaxOpenConns, C.Conf.PostgresMaxIdleConns, C.Conf.PostgresMaxIdleTime
+			"password=%s dbname=%s sslmode=%s sslrootcert=%s",
+			dbHost, dbPort, dbUser, dbPass, dbName, C.Conf.PostgresSSLMode, C.Conf.PostgresRootCertLoc)
 	}
 }
 
