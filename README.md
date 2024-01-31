@@ -24,7 +24,7 @@ Golang API boilerplate using GoFiber and PostgreSQL
 ### Pro-tip
 - Get beautiful folder by using Material Icon Theme in VSCode  
 
-![Folder structure](/assets/folder-structure.png?raw=true "Folder Structure")
+<img src="assets/folder-structure.png" width="300" height="500">
 
 
 ## How to use
